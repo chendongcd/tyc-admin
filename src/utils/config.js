@@ -1,13 +1,14 @@
 const APIV1 = '/api/v1'
 const APIV2 = '/api/v2'
-
+const path = true?'static/public':'public'
+console.log(path)
 module.exports = {
   name: 'AntD Admin',
   prefix: 'antdAdmin',
   footerText: 'Ant Design Admin  © 2018 zuiidea',
-  logo: '/public/logo.svg',
-  iconFontCSS: '/public/iconfont.css',
-  iconFontJS: '/public/iconfont.js',
+  logo: `${path}/logo.svg`,
+  iconFontCSS: `${path}/iconfont.css`,
+  iconFontJS: `${path}/iconfont.js`,
   CORS: [],
   openPages: ['/login'],
   apiPrefix: '/api/v1',
